@@ -1,0 +1,805 @@
+options:
+  Version: 1.2
+Options:
+  buyrp1: 25000
+  perm8: redprotect.limits.blocks.8000
+  perm10: redprotect.limits.blocks.10000
+  perm12: redprotect.limits.blocks.12000
+  perm14: redprotect.limits.blocks.14000
+  perm16: redprotect.limits.blocks.16000
+  perm18: redprotect.limits.blocks.18000
+  perm20: redprotect.limits.blocks.20000
+  perm22: redprotect.limits.blocks.22000
+  perm24: redprotect.limits.blocks.24000
+  perm26: redprotect.limits.blocks.26000
+  perm28: redprotect.limits.blocks.28000
+  perm30: redprotect.limits.blocks.30000
+  perm32: redprotect.limits.blocks.32000
+  perm34: redprotect.limits.blocks.34000
+  perm36: redprotect.limits.blocks.36000
+  perm38: redprotect.limits.blocks.38000
+  perm40: redprotect.limits.blocks.40000
+
+command /buyblocklimitsvs:
+  trigger:
+    if player is in group "owner":
+      if player's balance >= {@buyrp1}:
+        if player doesn't have permission "{@perm26}":
+          add "{@perm26}" to player's permission
+          add "{@perm28}" to player's permission
+          send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+        else:
+          if player doesn't have permission "{@perm26}":
+            add "{@perm26}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm28}":
+            add "{@perm28}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm30}":
+            add "{@perm30}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm32}":
+            add "{@perm32}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm34}":
+            add "{@perm34}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm36}":
+            add "{@perm36}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm38}":
+            add "{@perm38}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm40}":
+            add "{@perm40}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aBlock Limit Maksimal telah dicapai!"
+          else:
+            send "&c[&6PKCraft System&c] &aAnda Tidak Dapat Membeli Block Limit Lagi!"
+      else:
+        send "&c[&6PKCraft System&c] &aAnda Tidak Memiliki Cukup Uang!"
+    else if player is in group "admin":
+      if player's balance >= {@buyrp1}:
+        if player doesn't have permission "{@perm26}":
+          add "{@perm26}" to player's permission
+          add "{@perm28}" to player's permission
+          send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+        else:
+          if player doesn't have permission "{@perm26}":
+            add "{@perm26}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm28}":
+            add "{@perm28}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm30}":
+            add "{@perm30}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm32}":
+            add "{@perm32}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm34}":
+            add "{@perm34}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm36}":
+            add "{@perm36}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm38}":
+            add "{@perm38}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm40}":
+            add "{@perm40}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aBlock Limit Maksimal telah dicapai!"
+          else:
+            send "&c[&6PKCraft System&c] &aAnda Tidak Dapat Membeli Block Limit Lagi!"
+      else:
+        send "&c[&6PKCraft System&c] &aAnda Tidak Memiliki Cukup Uang!"
+    else if player is in group "dev":
+      if player's balance >= {@buyrp1}:
+        if player doesn't have permission "{@perm26}":
+          add "{@perm26}" to player's permission
+          add "{@perm28}" to player's permission
+          send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+        else:
+          if player doesn't have permission "{@perm26}":
+            add "{@perm26}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm28}":
+            add "{@perm28}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm30}":
+            add "{@perm30}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm32}":
+            add "{@perm32}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm34}":
+            add "{@perm34}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm36}":
+            add "{@perm36}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm38}":
+            add "{@perm38}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm40}":
+            add "{@perm40}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aBlock Limit Maksimal telah dicapai!"
+          else:
+            send "&c[&6PKCraft System&c] &aAnda Tidak Dapat Membeli Block Limit Lagi!"
+      else:
+        send "&c[&6PKCraft System&c] &aAnda Tidak Memiliki Cukup Uang!"
+    else if player is in group "rpg":
+      if player's balance >= {@buyrp1}:
+        if player doesn't have permission "{@perm26}":
+          add "{@perm26}" to player's permission
+          add "{@perm28}" to player's permission
+          send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+        else:
+          if player doesn't have permission "{@perm26}":
+            add "{@perm26}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm28}":
+            add "{@perm28}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm30}":
+            add "{@perm30}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm32}":
+            add "{@perm32}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm34}":
+            add "{@perm34}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm36}":
+            add "{@perm36}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm38}":
+            add "{@perm38}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm40}":
+            add "{@perm40}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aBlock Limit Maksimal telah dicapai!"
+          else:
+            send "&c[&6PKCraft System&c] &aAnda Tidak Dapat Membeli Block Limit Lagi!"
+      else:
+        send "&c[&6PKCraft System&c] &aAnda Tidak Memiliki Cukup Uang!"
+    else if player is in group "moderator":
+      if player's balance >= {@buyrp1}:
+        if player doesn't have permission "{@perm26}":
+          add "{@perm26}" to player's permission
+          add "{@perm28}" to player's permission
+          send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+        else:
+          if player doesn't have permission "{@perm26}":
+            add "{@perm26}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm28}":
+            add "{@perm28}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm30}":
+            add "{@perm30}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm32}":
+            add "{@perm32}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm34}":
+            add "{@perm34}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm36}":
+            add "{@perm36}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm38}":
+            add "{@perm38}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm40}":
+            add "{@perm40}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aBlock Limit Maksimal telah dicapai!"
+          else:
+            send "&c[&6PKCraft System&c] &aAnda Tidak Dapat Membeli Block Limit Lagi!"
+      else:
+        send "&c[&6PKCraft System&c] &aAnda Tidak Memiliki Cukup Uang!"
+    else if player is in group "helper":
+      if player's balance >= {@buyrp1}:
+        if player doesn't have permission "{@perm26}":
+          add "{@perm26}" to player's permission
+          add "{@perm28}" to player's permission
+          send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+        else:
+          if player doesn't have permission "{@perm26}":
+            add "{@perm26}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm28}":
+            add "{@perm28}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm30}":
+            add "{@perm30}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm32}":
+            add "{@perm32}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm34}":
+            add "{@perm34}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm36}":
+            add "{@perm36}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm38}":
+            add "{@perm38}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm40}":
+            add "{@perm40}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aBlock Limit Maksimal telah dicapai!"
+          else:
+            send "&c[&6PKCraft System&c] &aAnda Tidak Dapat Membeli Block Limit Lagi!"
+      else:
+        send "&c[&6PKCraft System&c] &aAnda Tidak Memiliki Cukup Uang!"
+    else if player is in group "seniorbuilder":
+      if player's balance >= {@buyrp1}:
+        if player doesn't have permission "{@perm26}":
+          add "{@perm26}" to player's permission
+          add "{@perm28}" to player's permission
+          send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+        else:
+          if player doesn't have permission "{@perm26}":
+            add "{@perm26}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm28}":
+            add "{@perm28}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm30}":
+            add "{@perm30}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm32}":
+            add "{@perm32}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm34}":
+            add "{@perm34}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm36}":
+            add "{@perm36}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm38}":
+            add "{@perm38}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm40}":
+            add "{@perm40}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aBlock Limit Maksimal telah dicapai!"
+          else:
+            send "&c[&6PKCraft System&c] &aAnda Tidak Dapat Membeli Block Limit Lagi!"
+      else:
+        send "&c[&6PKCraft System&c] &aAnda Tidak Memiliki Cukup Uang!"
+    else if player is in group "builder":
+      if player's balance >= {@buyrp1}:
+        if player doesn't have permission "{@perm26}":
+          add "{@perm26}" to player's permission
+          add "{@perm28}" to player's permission
+          send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+        else:
+          if player doesn't have permission "{@perm26}":
+            add "{@perm26}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm28}":
+            add "{@perm28}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm30}":
+            add "{@perm30}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm32}":
+            add "{@perm32}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm34}":
+            add "{@perm34}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm36}":
+            add "{@perm36}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm38}":
+            add "{@perm38}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm40}":
+            add "{@perm40}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aBlock Limit Maksimal telah dicapai!"
+          else:
+            send "&c[&6PKCraft System&c] &aAnda Tidak Dapat Membeli Block Limit Lagi!"
+      else:
+        send "&c[&6PKCraft System&c] &aAnda Tidak Memiliki Cukup Uang!"
+    else if player is in group "youtuber":
+      if player's balance >= {@buyrp1}:
+        if player doesn't have permission "{@perm16}":
+          add "{@perm16}" to player's permission
+          add "{@perm18}" to player's permission
+          send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+        else:
+          if player doesn't have permission "{@perm18}":
+            add "{@perm18}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm20}":
+            add "{@perm20}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm22}":
+            add "{@perm22}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm24}":
+            add "{@perm24}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm26}":
+            add "{@perm26}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm28}":
+            add "{@perm28}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm30}":
+            add "{@perm30}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm32}":
+            add "{@perm32}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm34}":
+            add "{@perm34}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm36}":
+            add "{@perm36}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm38}":
+            add "{@perm38}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm40}":
+            add "{@perm40}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aBlock Limit Maksimal telah dicapai!"
+          else:
+            send "&c[&6PKCraft System&c] &aAnda Tidak Dapat Membeli Block Limit Lagi!"
+      else:
+        send "&c[&6PKCraft System&c] &aAnda Tidak Memiliki Cukup Uang!"
+    else if player is in group "mvip+":
+      if player's balance >= {@buyrp1}:
+        if player doesn't have permission "{@perm26}":
+          add "{@perm26}" to player's permission
+          add "{@perm28}" to player's permission
+          send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+        else:
+          if player doesn't have permission "{@perm26}":
+            add "{@perm26}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm28}":
+            add "{@perm28}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm30}":
+            add "{@perm30}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm32}":
+            add "{@perm32}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm34}":
+            add "{@perm34}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm36}":
+            add "{@perm36}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm38}":
+            add "{@perm38}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm40}":
+            add "{@perm40}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aBlock Limit Maksimal telah dicapai!"
+          else:
+            send "&c[&6PKCraft System&c] &aAnda Tidak Dapat Membeli Block Limit Lagi!"
+      else:
+        send "&c[&6PKCraft System&c] &aAnda Tidak Memiliki Cukup Uang!"
+    else if player is in group "mvip":
+      if player's balance >= {@buyrp1}:
+        if player doesn't have permission "{@perm16}":
+          add "{@perm16}" to player's permission
+          add "{@perm18}" to player's permission
+          send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+        else:
+          if player doesn't have permission "{@perm18}":
+            add "{@perm18}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm20}":
+            add "{@perm20}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm22}":
+            add "{@perm22}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm24}":
+            add "{@perm24}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm26}":
+            add "{@perm26}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm28}":
+            add "{@perm28}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm30}":
+            add "{@perm30}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm32}":
+            add "{@perm32}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm34}":
+            add "{@perm34}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm36}":
+            add "{@perm36}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm38}":
+            add "{@perm38}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm40}":
+            add "{@perm40}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aBlock Limit Maksimal telah dicapai!"
+          else:
+            send "&c[&6PKCraft System&c] &aAnda Tidak Dapat Membeli Block Limit Lagi!"
+      else:
+        send "&c[&6PKCraft System&c] &aAnda Tidak Memiliki Cukup Uang!"
+    else if player is in group "vip":
+      if player's balance >= {@buyrp1}:
+        if player doesn't have permission "{@perm14}":
+          add "{@perm14}" to player's permission
+          add "{@perm16}" to player's permission
+          send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+        else:
+          if player doesn't have permission "{@perm16}":
+            add "{@perm16}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm18}":
+            add "{@perm18}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm20}":
+            add "{@perm20}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm22}":
+            add "{@perm22}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm24}":
+            add "{@perm24}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm26}":
+            add "{@perm26}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm28}":
+            add "{@perm28}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm30}":
+            add "{@perm30}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm32}":
+            add "{@perm32}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm34}":
+            add "{@perm34}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm36}":
+            add "{@perm36}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm38}":
+            add "{@perm38}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm40}":
+            add "{@perm40}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aBlock Limit Maksimal telah dicapai!"
+          else:
+            send "&c[&6PKCraft System&c] &aAnda Tidak Dapat Membeli Block Limit Lagi!"
+      else:
+        send "&c[&6PKCraft System&c] &aAnda Tidak Memiliki Cukup Uang!"
+    else if player is in group "inner-member":
+      if player's balance >= {@buyrp1}:
+        if player doesn't have permission "{@perm12}":
+          add "{@perm12}" to player's permission
+          add "{@perm14}" to player's permission
+          send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+        else:
+          if player doesn't have permission "{@perm14}":
+            add "{@perm14}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm16}":
+            add "{@perm16}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm18}":
+            add "{@perm18}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm20}":
+            add "{@perm20}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm22}":
+            add "{@perm22}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm24}":
+            add "{@perm24}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm26}":
+            add "{@perm26}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm28}":
+            add "{@perm28}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm30}":
+            add "{@perm30}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm32}":
+            add "{@perm32}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm34}":
+            add "{@perm34}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm36}":
+            add "{@perm36}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm38}":
+            add "{@perm38}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm40}":
+            add "{@perm40}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aBlock Limit Maksimal telah dicapai!"
+          else:
+            send "&c[&6PKCraft System&c] &aAnda Tidak Dapat Membeli Block Limit Lagi!"
+      else:
+        send "&c[&6PKCraft System&c] &aAnda Tidak Memiliki Cukup Uang!"
+    else if player is in group "member":
+      if player's balance >= {@buyrp1}:
+        if player doesn't have permission "{@perm10}":
+          add "{@perm10}" to player's permission
+          add "{@perm12}" to player's permission
+          send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+        else:
+          if player doesn't have permission "{@perm12}":
+            add "{@perm12}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm14}":
+            add "{@perm14}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm16}":
+            add "{@perm16}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm18}":
+            add "{@perm18}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm20}":
+            add "{@perm20}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm22}":
+            add "{@perm22}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm24}":
+            add "{@perm24}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm26}":
+            add "{@perm26}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm28}":
+            add "{@perm28}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm30}":
+            add "{@perm30}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm32}":
+            add "{@perm32}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm34}":
+            add "{@perm34}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm36}":
+            add "{@perm36}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm38}":
+            add "{@perm38}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm40}":
+            add "{@perm40}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aBlock Limit Maksimal telah dicapai!"
+          else:
+            send "&c[&6PKCraft System&c] &aAnda Tidak Dapat Membeli Block Limit Lagi!"
+      else:
+        send "&c[&6PKCraft System&c] &aAnda Tidak Memiliki Cukup Uang!"
+    else:
+      if player's balance >= {@buyrp1}:
+        if player doesn't have permission "{@perm8}":
+          add "{@perm8}" to player's permission
+          add "{@perm10}" to player's permission
+          send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+        else:
+          if player doesn't have permission "{@perm10}":
+            add "{@perm10}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm12}":
+            add "{@perm12}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm14}":
+            add "{@perm14}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm16}":
+            add "{@perm16}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm18}":
+            add "{@perm18}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm20}":
+            add "{@perm20}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm22}":
+            add "{@perm22}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm24}":
+            add "{@perm24}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm26}":
+            add "{@perm26}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm28}":
+            add "{@perm28}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm30}":
+            add "{@perm30}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm32}":
+            add "{@perm32}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm34}":
+            add "{@perm34}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm36}":
+            add "{@perm36}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm38}":
+            add "{@perm38}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aSilahkan Check Block Limit anda &c/rp blocklimit!"
+          else if player doesn't have permission "{@perm40}":
+            add "{@perm40}" to player's permission
+            remove {@buyrp1} from player's balance
+            send "&c[&6PKCraft System&c] &aBlock Limit Maksimal telah dicapai!"
+          else:
+            send "&c[&6PKCraft System&c] &aAnda Tidak Dapat Membeli Block Limit Lagi!"
+      else:
+        send "&c[&6PKCraft System&c] &aAnda Tidak Memiliki Cukup Uang!"
